@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>JS Example Toolbox</title>
+  <link rel="stylesheet" href="styles/jsexamples.css">
+  <script src="js/jsexamples.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Examples Toolbox</h1>
+     <nav>
+    <a href="index.html">HTML & CSS Toolbox</a>
+       </nav>
+    </header>
+    <aside>
+      <a href="https://codepen.io/Jasmine_RB/pen/QWEyMeW">Changing Opacity</a> &nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/bGegZKy">Image Click</a> &nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/pobVJVx">Responsive Navigation</a> &nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/rNLJKaR">10 Button Click</a>&nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/MWeXBXN">Weight Conversion Button</a>&nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/GRqdQdr">Price Calculation</a>&nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/WNxKoxx">5 JavaScript</a>&nbsp; &nbsp; &nbsp;
+      <a href="https://codepen.io/Jasmine_RB/pen/KKMxGNz">Mind Master </a>&nbsp; &nbsp; &nbsp;
+      </aside>
+<div class="container">
+
+     <div id="example1" class="box">
+     <h2>What is JavaScript</h2>
+        <p id="color">JavaSript is type of programming language that is poplure to use on many differnet website that is created. In my opionin JavaScript is one of the most programming language that is used more. The reason why i think Javascript is used often is becuase Javasritp is an easy programming language to learn more about. Javascript can not only be used for the web but can also be used in games, softwares and apps. Javascrip will be utilized by Web designers becuase desingers will take there website or app to a whole new level of programming a website.</p>
+     </div>
+
+     <div id="example2" class="box"> 
+      <h2>Mouse Over Or Mouse Out</h2>
+      <p id="color"> With this JavaScript when you move your mouse over and off of the text will say something different. This JavaSript is an onmouseover and an onmouseout event from the JavaScript HTML DOM events. Hover over the box to see what the other text will say.</p><br>
+ <div class="JS1" id="mouse"onmouseover="mouseOver()" onmouseout="mouseOut()">
+       </div>
+ <script>
+document.getElementById("mouse").onmouseover = function() {mouseOver()};
+document.getElementById("mouse").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("mouse").innerHTML = "Hello";
+}
+
+function mouseOut() {
+  document.getElementById("mouse").innerHTML = "Over Here";
+}
+</script>
+  </div>
+     <div id="example3" class="box">
+       <h2>JavaScript Statements</h2>
+        <p id="color">JavaScript statement can be grouped  together to create these two different lines that will have statement of anything. Click on the button to reval what it says. This type of JavaSctipt statment can be used for user that are try to hide somthing but have to wait becuase they want others to click on button.</p> <br>
+ <button type="button" onclick="myFunction()">Click Me!</button>
+      <p id="JS2"></p>
+      <p id="JS2P1"></p>
+  <script>
+    function myFunction() {
+    document.getElementById("JS2").innerHTML = "Hello how are you?";
+    document.getElementById("JS2P1").innerHTML = "My name is Jasmine Ramos Bailey";
+}
+</script>
+</div>
+     <div id="example4" class="box">
+<h2>Fade In and Fade Out</h2>
+        <p id="color">The fade in and fade out example is an of the jQuery effect. With this fade in and fade out jquery effect there are 3 differe color boxs that will fade in when a user clicks on the button. And when a user clicks on the button again it will hide the colors the 3 different colors that was picked. Click on the button to find out what colors was picked. </p>
+<button id="button2">Click Me</button><br><br>
+<div id="color1" style="width:80px;height:80px;background-color:#FF3D00;"></div>
+<br>
+<div id="color2" style="width:80px;height:80px;background-color:#1B5E20;"></div>
+<br>
+<div id="color3" style="width:80px;height:80px;background-color:#3E2723;"></div>
+<script>
+  $("#button2").click(function(){
+    $("#color1").fadeToggle();
+    $("#color2").fadeToggle("fast");
+    $("#color3").fadeToggle(3000);
+  });
+       </script>
+  </div>
+     <div id="example5" class="box">
+<h2>Hide and Show</h2>
+        <p id="color">The hide and show effect is a jQuery effect that shows and hides any text.  The jQuery hide and show effect can be used on a website that needs to be hidden or shown. When a user clicks on the hide button it will hide text that is on the website.  And when a user clicks on the show button then things show on the website. </p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<script>
+ $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+       </script>
+</div>
+
+  </div>
+    <footer>
+<p>Create by: Jasmine Ramos Bailey | October 18, 2020</p>
+		</footer>
+</body>
+</html>
